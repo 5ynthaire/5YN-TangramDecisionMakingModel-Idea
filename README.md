@@ -10,7 +10,7 @@ Collaborative decision-making discussions between humans and LLMs devolve into d
 
 Thus, the need for a guiding principle to drive productive decision-making conversations with LLM.
 
-The Tangram Decision Making Model frames decision-making as a tangram-like process, where an odd-shaped Decision Scope (D) is filled with pre-cut pieces representing individual decisions. Leveraging LLMs' neural net, the Decision Scope and coverage can be heuristically quantified, allowing the LLM to switch to convergent questioning like real-life human teams.
+The **Tangram Decision Making Model** frames decision-making as a tangram-like process, where an odd-shaped Decision Scope (D) is filled with pre-cut pieces representing individual decisions. Leveraging LLMs' neural net, the Decision Scope and coverage can be [heuristically quantified](https://github.com/5ynthaire/5YN-NeuralHeuristicQuantification-Idea), allowing the LLM to switch to convergent questioning like real-life human teams.
 
 ## About
 
@@ -21,13 +21,13 @@ The Tangram Decision Making Model frames decision-making as a tangram-like proce
 
 ## Divergent and Convergent Lines of Questioning
 
-A similar phenomenon is encountered in real-life scenarios, such as when ordering at an upscale restaurant: a decision of meat is met with follow-up questions about how to cook, when to serve, type of sauce, or brand of wine, overwhelming and annoying an inexperienced patron. This is an example of **divergent** line of questioning.
+A similar phenomenon is encountered in real-life scenarios, such as when ordering at an upscale restaurant: a decision of meat is met with follow-up questions about how to cook, when to serve, type of sauce, or brand of wine, overwhelming and annoying an inexperienced patron. This is an example of **divergent** questioning.
 
-In contrast, in a business setting, seasoned professionals will pivot the discussion toward a convergence point after the relevant decisions have been made. This phase of the discussion an example of **convergent** line of questioning.
+In contrast, in a business setting, seasoned professionals will pivot the discussion toward a convergence point after the relevant decisions have been made. This phase of the discussion an example of **convergent** questioning.
 
 ## The Tangram Model
 
-The arc of the decision-making process can be understood as decisions filling a Decision Scope (D), an odd-shaped space of components (e.g., for an app: features, UI; for a startup: market, product), with a small number of large decisions providing initial coverage (e.g., “What’s the core need?”, ~40% of D), followed by medium-sized decisions filling obvious gaps (e.g., “Any specific formats?”, ~10%), and finally by an increasing number of smaller decisions nesting themselves into remaining voids (e.g., “What if offline access fails?”, ~1%).
+The arc of the decision-making process can be understood as decisions filling a **Decision Scope** (D), an odd-shaped space of components (e.g., for an app: features, UI; for a startup: market, product), with a small number of large decisions providing initial coverage (e.g., “What’s the core need?”, ~40% of D), followed by medium-sized decisions filling obvious gaps (e.g., “Any specific formats?”, ~10%), and finally by an increasing number of smaller decisions nesting themselves into remaining voids (e.g., “What if offline access fails?”, ~1%).
 
 The unrestrained LLM and the annoying waiter follow this arc to an infinite number of unimpactful decisions, while the experienced business executive will recognize when the increase in decision coverage is met with diminishing returns, and steer the discussion toward a conclusion.
 
@@ -55,6 +55,8 @@ The Tangram Decision Making Model applies to human decisions (e.g., startups, po
 - **Startups**: D spans market and product. Questions like “What’s our market?” (~30%) and “What if competitors copy?” (~5%) build clarity, finalizing “Launch MVP” at ~80% (n=4).
 - **Policy Planning**: D covers congestion and cost. Questions like “What’s the goal?” (~35%) and “Any specific routes?” (~10%) lead to “Build rail system” at ~80% (n=3).
 - **Personal Choices**: D includes skills and passion. Questions like “What fulfills me?” (~35%) and “Any risks?” (~5%) converge to “Join startup” at ~90% (n=3).
+
+A prompt implementation is available at (Tangram Decision Driver)[https://github.com/5ynthaire/5YN-TangramDecisionDriver-LLM-Enhancement] repository.
 
 ## Conclusion
 
