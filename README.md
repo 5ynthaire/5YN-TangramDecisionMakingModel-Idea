@@ -21,7 +21,7 @@ The **Tangram Decision Making Model** frames decision-making as a tangram-like p
 
 ## Divergent and Convergent Lines of Questioning
 
-A similar phenomenon is encountered in real-life scenarios, such as when ordering at an upscale restaurant: a decision of meat is met with follow-up questions about how to cook, when to serve, type of sauce, or brand of wine, overwhelming and annoying an inexperienced patron. This is an example of **divergent** questioning.
+Real-life scenarios can mirror LLMs' barrage of pointless questions, such as when ordering at an upscale restaurant: a decision of meat is met with follow-up questions about how to cook, when to serve, type of sauce, or brand of wine, overwhelming and annoying an inexperienced patron. This is an example of **divergent** questioning.
 
 In contrast, in a business setting, seasoned professionals will pivot the discussion toward a convergence point after the relevant decisions have been made. This phase of the discussion an example of **convergent** questioning.
 
@@ -56,7 +56,7 @@ The Tangram Decision Making Model applies to human decisions (e.g., startups, po
 - **Policy Planning**: D covers congestion and cost. Questions like “What’s the goal?” (~35%) and “Any specific routes?” (~10%) lead to “Build rail system” at ~80% (n=3).
 - **Personal Choices**: D includes skills and passion. Questions like “What fulfills me?” (~35%) and “Any risks?” (~5%) converge to “Join startup” at ~90% (n=3).
 
-A prompt implementation is available at (Tangram Decision Driver)[https://github.com/5ynthaire/5YN-TangramDecisionDriver-LLM-Enhancement] repository.
+A prompt implementation is available at [Tangram Decision Driver](https://github.com/5ynthaire/5YN-TangramDecisionDriver-LLM-Enhancement) repository.
 
 ## Conclusion
 
