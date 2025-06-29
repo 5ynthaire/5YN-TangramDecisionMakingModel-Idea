@@ -29,7 +29,7 @@ In contrast, in a business setting, seasoned professionals will pivot the discus
 
 The arc of the decision-making process can be understood as decisions filling a Decision Scope (D), an odd-shaped space of components (e.g., for an app: features, UI; for a startup: market, product), with a small number of large decisions providing initial coverage (e.g., “What’s the core need?”, ~40% of D), followed by medium-sized decisions filling obvious gaps (e.g., “Any specific formats?”, ~10%), and finally by an increasing number of smaller decisions nesting themselves into remaining voids (e.g., “What if offline access fails?”, ~1%).
 
-The unrestrained LLM and the annoying waiter follow this arc to an infinite number of unimpactful decisions, while the experienced business executive will recognize when the increase in decision coverage is met with diminishing returns and steer the discussion toward a conclusion.
+The unrestrained LLM and the annoying waiter follow this arc to an infinite number of unimpactful decisions, while the experienced business executive will recognize when the increase in decision coverage is met with diminishing returns, and steer the discussion toward a conclusion.
 
 ## Metrics
 
@@ -48,11 +48,6 @@ This metric measures impact by balancing clarity (A_n, % of D) against complexit
 ## Scope and Novelty
 
 The Tangram Decision Making Model applies to human decisions (e.g., startups, policy, personal choices) and LLM interactions, supporting fluid questions (e.g., mixing “What’s the core need?”, “What’s essential?” per round). Its discrete, question-driven framework, unlike regularization’s continuous domain, captures fractal decision branching and human-AI synergy, enabling universal decision-making clarity across contexts like app development (e.g., converging to “Text notes app”) or policy planning (e.g., “Build rail system”).
-
-## Decisions
-
-- **Discrete Structure**: Questions as discrete tangram pieces reflect linguistic and conceptual limits, unlike continuous models (e.g., gas diffusion), enabling incremental coverage of D.
-- **Quadratic Penalty**: The S_n² term penalizes fractal question sprawl, amplifying complexity costs (e.g., S_n = 25 → 625) to highlight convergence points, akin to regularization but tailored to question-driven processes.
 
 ## Applications
 
