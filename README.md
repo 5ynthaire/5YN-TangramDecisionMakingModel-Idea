@@ -1,10 +1,16 @@
 # Tangram Decision Making Model
 
-This repository presents the Tangram Decision Making Model, a novel idea for structuring decision-making, as seen in my Substack article [link to be provided].
+This repository presents the Tangram Decision Making Model, a novel idea for structuring decision-making.<!--as seen in my Substack article [link to be provided].-->
 
 ## Overview
 
-Large language models (LLMs) often overwhelm users with divergent questions, such as “What’s the purpose of this app?” or “Any specific formats needed?”, spiraling into fractal complexity with queries like “What if offline access fails?” In contrast, real-life decision-making funnels to key outcomes, like “Build this app” or “Launch this product,” after sufficient exploration. The Tangram Decision Making Model frames decisions as a puzzle, filling a Decision Scope with questions, leveraging LLM’s neural net approach to quantify decision scope and coverage, allowing the LLM to switch to convergent questioning like real-life human teams.
+Collaborative decision-making discussions between humans and LLMs devolve into divergent lines of questioning, with initial questions spawning a fractal explosion of follow-ups undermining closure and progression to executive discussion. This can be understood as the result of two factors:
+- LLMs lack a meta-level understanding of the decision-making process.
+- LLMs are designed for engagement; hence, user answers are met with more questions, drawing the conversation further down the rabbit hole rather than toward an actionable outcome.
+
+Thus, the need for a guiding principle to drive productive decision-making conversations with LLM.
+
+The Tangram Decision Making Model frames decision-making as a tangram-like process, where an odd-shaped Decision Scope (D) is filled with pre-cut pieces representing individual decisions. Leveraging LLMs' neural net, the Decision Scope and coverage can be heuristically quantified, allowing the LLM to switch to convergent questioning like real-life human teams.
 
 ## About
 
@@ -13,11 +19,35 @@ Large language models (LLMs) often overwhelm users with divergent questions, suc
 **Mission**: Advancing human-AI synergy to drive innovation.  
 **Attribution**: Developed with Grok 3 by xAI (no affiliation).
 
-## Model
+## Divergent and Convergent Lines of Questioning
 
-The Tangram Decision Making Model conceptualizes a decision as an odd-shaped space, **D (Decision Scope)**, encompassing all relevant components, such as features and UI for an app, or market and product for a startup. Questions act as discrete tangram pieces, varying from broad (e.g., “What’s the purpose?”, covering ~40% of D) to specific (e.g., “Any specific formats?”, ~10%) to edge cases (e.g., “What if offline fails?”, ~1%). These pieces are placed semi-intentionally, reflecting linguistic and conceptual constraints, to incrementally fill D across rounds (n=1,2,3...).
+A similar phenomenon is encountered in real-life scenarios, such as when ordering at an upscale restaurant: a decision of meat is met with follow-up questions about how to cook, when to serve, type of sauce, or brand of wine, overwhelming and annoying an inexperienced patron. This is an example of **divergent** line of questioning.
 
-The model’s core metric, **A_n × S_n²**, balances question impact (**A_n**, average % of D covered per question, derived from user ratings) against complexity (**S_n²**, squared question count). Early rounds feature broad questions with high A_n (e.g., n=1, A_n = 8%, S_n = 3, for “What’s the core need?”), peaking at clarity (e.g., n=3, A_n = 5%, S_n = 12, ~85% of D). As questions become specific, A_n drops and S_n surges (e.g., n=5, A_n = 1%, S_n = 25, for “What if competitors copy?”), signaling a need to shift to convergent questions (e.g., “What’s essential?”) to finalize decisions (e.g., “Text notes app”). This mirrors real-life funnelling, robust across simple (e.g., app specs) or complex (e.g., policy plans) decision spaces and dimensions (e.g., 2D features or 3D market strategies).
+In contrast, in a business setting, seasoned professionals will pivot the discussion toward a convergence point after the relevant decisions have been made. This phase of the discussion an example of **convergent** line of questioning.
+
+## The Tangram Model
+
+The arc of the decision-making process can be understood as decisions filling a Decision Scope (D), an odd-shaped space of components (e.g., for an app: features, UI; for a startup: market, product), with a small number of large decisions providing initial coverage (e.g., “What’s the core need?”, ~40% of D), followed by medium-sized decisions filling obvious gaps (e.g., “Any specific formats?”, ~10%), and finally by an increasing number of smaller decisions nesting themselves into remaining voids (e.g., “What if offline access fails?”, ~1%).
+
+The unrestrained LLM and the annoying waiter follow this arc to an infinite number of unimpactful decisions, while the experienced business executive will recognize when the increase in decision coverage is met with diminishing returns and steer the discussion toward a conclusion.
+
+## Metrics
+
+Formulaically, this model can be expressed as:
+P = A_n × S_n²
+with:
+- n: Round of decision.
+- P: Decision impact at round n.
+- A_n: Average coverage gain per decision at round n (% of D), quantified by LLM heuristics (e.g., embeddings, context analysis).
+- S_n: Decision count at round n.
+
+P peaks at high clarity (e.g., ~80–90% of D, n=2–3), signaling a shift to convergent questioning (e.g., “What’s essential?”). For example, early questions such as “What’s the core need?” (~40% of D) yield high A_n (e.g., 20% for 3 decisions, P = 180), while fractal questions like “What if offline access fails?” (~0.1%) yield low A_n (e.g., 0.01% for 50 decisions, P = 25), with S_n²’s quadratic growth (e.g., 50² = 2500) amplifying the cost of low-impact decisions, reducing P post-peak to trigger convergence.
+
+This metric measures impact by balancing clarity (A_n, % of D) against complexity (S_n², squared count). Like L2 regularization (error × complexity²), P ensures efficiency, but its discrete, question-driven focus is novel for cognitive processes, leveraging human-AI synergy (LLM quantifies A_n, users answer questions) to capture fractal branching (e.g., “What’s the core need?” to “What if offline access fails?”).
+
+## Scope and Novelty
+
+The Tangram Decision Making Model applies to human decisions (e.g., startups, policy, personal choices) and LLM interactions, supporting fluid questions (e.g., mixing “What’s the core need?”, “What’s essential?” per round). Its discrete, question-driven framework, unlike regularization’s continuous domain, captures fractal decision branching and human-AI synergy, enabling universal decision-making clarity across contexts like app development (e.g., converging to “Text notes app”) or policy planning (e.g., “Build rail system”).
 
 ## Decisions
 
@@ -37,7 +67,5 @@ The Tangram Decision Making Model tames LLM-driven divergent chaos, structuring 
 
 ## License
 
-<!--CODEBLOCK START-->
 This idea is released under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).  
 For commercial use or collaboration, DM [@5ynthaire] instead of forking. Tag [@5ynthaire] on X with Tangram Decision Making Model use or open an Issue labeled “TangramDecisionMakingModel-use” to share ideas.
-<!--CODEBLOCK END-->
