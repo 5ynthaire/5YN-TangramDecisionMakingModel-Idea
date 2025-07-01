@@ -4,7 +4,7 @@ This repository presents the Tangram Decision Making Model, a novel idea for str
 
 ## Overview
 
-Collaborative decision-making discussions between humans and LLMs devolve into divergent lines of questioning, with initial questions spawning a fractal explosion of follow-ups undermining closure and progression to executive discussion. This can be understood as the result of two factors:
+Collaborative decision-making discussions between humans and LLMs frequently devolve into divergent lines of questioning, with initial questions spawning a fractal explosion of follow-ups undermining closure and progression to executive discussion. This can be understood as the result of two factors:
 - LLMs lack a meta-level understanding of the decision-making process.
 - LLMs are designed for engagement; hence, user answers are met with more questions, drawing the conversation further down the rabbit hole rather than toward an actionable outcome.
 
