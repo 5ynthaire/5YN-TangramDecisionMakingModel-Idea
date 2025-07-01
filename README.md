@@ -23,7 +23,7 @@ The **Tangram Decision Making Model** frames decision-making as a tangram-like p
 
 Real-life scenarios can mirror LLMs' barrage of pointless questions, such as when ordering at an upscale restaurant: a decision of meat is met with follow-up questions about how to cook, when to serve, type of sauce, or brand of wine, overwhelming and annoying an inexperienced patron. This is an example of **divergent** questioning.
 
-By contrast, in a business setting, seasoned professionals will pivot the discussion toward a convergence point after the relevant decisions have been made. This phase of the discussion an example of **convergent** questioning.
+By contrast, in a business setting, seasoned professionals will pivot the discussion toward a convergence point after the relevant decisions have been made. This phase of the discussion is an example of **convergent** questioning.
 
 ## The Tangram Model
 
